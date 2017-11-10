@@ -282,11 +282,11 @@ class ListMenu(Screen):
             self.release_grid.add_widget(btn)
         
 
-class FedoratorMenu(Screen):
+class openSUSEMenu(Screen):
     """ 
         The front (or standby) screen.
         
-        Besides a large image of the Fedora logo, it contains basic state
+        Besides a large image of the openSUSE logo, it contains basic state
         information.
     """
     left_disk_text = StringProperty()
@@ -349,8 +349,8 @@ class FedoratorMenu(Screen):
         self.ip = subprocess.getoutput('hostname -I')
     
 
-class FedoratorApp(App):
-    """ The Kivy app running the Fedorator. """
+class IntitatorApp(App):
+    """ The Kivy app running the Intitator. """
     selected_release = ObjectProperty()
     selected_releases = ObjectProperty()
     
@@ -359,8 +359,8 @@ class FedoratorApp(App):
     usb_disconnected = BooleanProperty()
     
     def build(self):
-        fedorator_menu = FedoratorMenu(name="front")
-        sm.add_widget(fedorator_menu)
+        intitator_menu = openSUSEMenu(name="front")
+        sm.add_widget(intitator_menu)
         list_menu = ListMenu(name="list")
         list_menu.build()
         sm.add_widget(list_menu)
@@ -370,9 +370,9 @@ class FedoratorApp(App):
         
         app.done_writing = False
         
-        fedorator_menu.update_ip(0)
-        Clock.schedule_interval(fedorator_menu.update_disks, 0.5)
-        Clock.schedule_interval(fedorator_menu.update_ip, 2.0)
+        intitator_menu.update_ip(0)
+        Clock.schedule_interval(intitator_menu.update_disks, 0.5)
+        Clock.schedule_interval(intitator_menu.update_ip, 2.0)
         return sm
 
 
@@ -380,5 +380,5 @@ if __name__ == '__main__':
     if os.getuid() != 0:
         logging.log(logging.WARNING, "Warning: Running without root privildges.  Writes will not be possible.")
     
-    app = FedoratorApp()
+    app = IntitatorApp()
     app.run()
