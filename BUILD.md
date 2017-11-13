@@ -45,14 +45,14 @@ Log in and follow these instructions to set up the Fedorator software.
     $ sudo apt-get build-dep python3-pygame
      
     $  # Clone this repository into the home directory
-    $ git clone https://github.com/Sanqui/fedorator
+    $ git clone https://github.com/openSUSE/intitator
     $ cd fedorator/src
      
     $  # Set up the virtualenv
     $ pip3 install virtualenv
     $ python3 -m virtualenv --python=python3 env
     $ source env/bin/activate
-    $ pip install cython
+    $ pip install cython cython3
     Navigate to src and execute the following:
     $ pip install -r requirements.txt
      
