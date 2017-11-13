@@ -53,6 +53,7 @@ Log in and follow these instructions to set up the Fedorator software.
     $ python3 -m virtualenv --python=python3 env
     $ source env/bin/activate
     $ pip install cython
+    Navigate to src and execute the following:
     $ pip install -r requirements.txt
      
     $ # if testing with a DE
