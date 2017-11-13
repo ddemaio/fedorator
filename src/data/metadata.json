@@ -10,7 +10,7 @@
         "category": "product",
         "name": "openSUSE Leap 42.3",
         "summary": "Get openSUSE Leap.",
-        "icon": "qrc:/logos/workstation",
+        "icon": "qrc:/logos/Leap",
         "screenshots": [],
         "description": [
             "<p>",
@@ -22,7 +22,7 @@
         "category": "product",
         "name": "openSUSE Kubic",
         "summary": "Get the Container Host OS for your applications and services.",
-        "icon": "qrc:/logos/server",
+        "icon": "qrc:/logos/Kubic",
         "screenshots": [],
         "description": [
             "<blockquote><p>",
@@ -34,6 +34,6 @@
         "category": "Product",
         "name": "Tumbleweed",
         "summary": "Stay update to date with upstream development with a well tested, proven rolling release. Get openSUSE Tumbleweed.",
-        "icon": "qrc:/logos/kde",
+        "icon": "qrc:/logos/Tumbleweed",
         ]
 ]
