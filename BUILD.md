@@ -48,7 +48,7 @@ Log in and follow these instructions to set up the Fedorator software.
     $  # Set up the virtualenv
     $ pip3 install virtualenv
     $ python3 -m virtualenv --python=python3 env
-    From git working directory, execute the following:
+     $  # From git working directory, execute the following:
     $ source env/bin/activate
     $ pip install cython
     $ sudo apt install libegl1-mesa-dev
