@@ -8,15 +8,15 @@ from sys import argv
 from tqdm import tqdm
 import requests
 
-VERSION = 26
-ARCH_PRIORITY = ["x86_64", "i386"]
-SUBVARIANT_PRIORITY = ["workstation", "server", "python-classroom", "kde", "xfce", "lxde"]
+VERSION = 42.3
+ARCH_PRIORITY = ["x86_64"]
+SUBVARIANT_PRIORITY = ["Regular Release", "Container Host OS", "Rolling Release"]
 
 DEFAULT_ARCH = ARCH_PRIORITY[0]
 DEFAULT_VERSION = VERSION
 
 DOWNLOAD_DIRECTORY = "iso"
-BUFFSIZE = (1024 ** 2) * 4 # 4MB
+BUFFSIZE = (1024 ** 2) * 4 # 4.7MB
 
 images = json.load(open("data/releases.json"))
 releases = json.load(open("data/metadata.json", encoding="utf-8"))
